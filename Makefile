@@ -1,8 +1,11 @@
 dirs := tmux
 
-.PHONY: all $(dirs)
+.PHONY: all update $(dirs)
 
-all: $(dirs)
+all: update $(dirs)
 
 $(dirs):
 	$(MAKE) --directory=$@ $(TARGET)
+
+update:
+	sudo apt-get update
