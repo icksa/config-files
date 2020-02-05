@@ -1,6 +1,6 @@
 .PHONY: all
 
-all: tmux xclip tpm
+all: tmux xclip tpm powerline
 	cp tmux.conf ~/.tmux.conf
 
 tmux:
@@ -8,6 +8,9 @@ tmux:
 
 xclip:
 	sudo apt-get install -y xclip
+
+powerline:
+	sudo apt-get install -y powerline
 
 # Install the tmux plugin manager:
 tpm:
