@@ -1,0 +1,4 @@
+;; -*- mode: Emacs-Lisp;-*-
+
+;; Disable automatic backup files
+(setq make-backup-files nil)
