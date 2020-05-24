@@ -1,4 +1,4 @@
-dirs := tmux
+dirs := tmux gnome
 
 .PHONY: all update $(dirs)
 
